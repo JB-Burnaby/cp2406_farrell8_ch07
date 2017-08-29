@@ -7,16 +7,16 @@ public class CountMovieSpaces2
         int stringLength;
         Scanner in = new Scanner(System.in);
         int numSpaces = 0;
-        System.out.print("Enter a movie quote >> ");
+        System.out.print("Enter a quote ");
         aString = in.nextLine();
         stringLength = aString.length();
 
         for(int i = 0; i < stringLength; i++)
         {
-            char ch = aString.charAt(i);
-            if(ch == ' ')
+            char c = aString.charAt(i);
+            if(c == ' ')
                 numSpaces++;
         }
-        System.out.println("The number of spaces is " + numSpaces);
+        System.out.println("Number of spaces: " + numSpaces);
     }
 }
